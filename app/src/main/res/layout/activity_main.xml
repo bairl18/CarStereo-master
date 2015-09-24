@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#3366ff"
+        android:layout_weight="0.91"
+        android:weightSum="1">
+
+
+        <ToggleButton
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Power"
+            android:id="@+id/toggleButton"
+            android:textOff="Power off"
+            android:textOn="Power on"
+            android:textSize="40px"
+            android:onClick="powerOn"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton2"
+            android:layout_weight="0.23"
+            android:layout_gravity="right"
+            android:textOff="AM"
+            android:textOn="FM"
+            android:textSize="35px" />
+
+        <TextView
+            android:layout_width="900px"
+            android:layout_height="52dp"
+            android:text="               Station Display"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="60px"
+            android:textIsSelectable="false"
+            android:layout_weight="0.26" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="1090px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/button6"
+                android:onClick="changePreset" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/button7"
+                android:onClick="changePreset"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/button8"
+                android:onClick="changePreset"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/button9"
+                android:onClick="changePreset"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/button10"
+                android:onClick="changePreset"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/button11"
+                android:onClick="changePreset"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="TUNER"
+            android:id="@+id/textView2"
+            android:layout_gravity="right"
+            android:textColor="#000000"
+            android:textSize="40px"
+            android:textIsSelectable="true" />
+
+        <SeekBar
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:id="@+id/seekBar"
+            android:layout_gravity="right"
+            android:layout_weight="0.23"
+            android:background="#000000" />
+
+        <SeekBar
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:id="@+id/seekBar2"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Volume"
+            android:id="@+id/textView5"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLUME"
+            android:id="@+id/textView3"
+            android:textSize="40px" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="#0099cc"
+        android:clickable="false"
+        android:layout_weight="0.15"
+        android:transitionGroup="false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play/Pause"
+            android:id="@+id/button5"
+            android:layout_row="15"
+            android:layout_column="14" />
+
+        <FrameLayout
+            android:layout_width="545dp"
+            android:layout_height="100px"
+            android:layout_row="15"
+            android:layout_column="15"
+            android:background="#000000"
+            android:id="@+id/frameLayout"></FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:id="@+id/button3"
+            android:layout_row="15"
+            android:layout_column="16" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eject"
+            android:id="@+id/button4"
+            android:layout_row="16"
+            android:layout_column="13" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/button"
+            android:layout_row="16"
+            android:layout_column="14" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat"
+            android:id="@+id/button2"
+            android:layout_row="16"
+            android:layout_column="16" />
+
+    </GridLayout>
+
+</LinearLayout>
